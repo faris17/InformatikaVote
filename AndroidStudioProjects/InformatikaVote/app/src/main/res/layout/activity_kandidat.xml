@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_kandidat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Kandidat">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp">
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/faris" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_dua"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@id/profile_image"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/faris" />
+
+            <Button
+                android:id="@+id/button_pilh"
+                style="@style/ButtonGeneral"
+                android:layout_marginTop="130dp"
+                android:layout_marginBottom="324dp"
+                android:text="@string/pilih" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="180dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/nama_ketua_kd1" />
+
+                    <TextView
+                        android:id="@+id/nama_ketua_kd1"
+                        style="@style/TextSpec.Value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/nama_wakil_kd1" />
+
+                    <TextView
+                        android:id="@+id/nama_wakil_kd1"
+                        style="@style/TextSpec.Value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/visi" />
+
+                    <TextView
+                        android:id="@+id/visi"
+                        style="@style/TextSpec.Value" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/misi" />
+
+                    <TextView
+                        android:id="@+id/misi"
+                        style="@style/TextSpec.Value"
+                        android:text="@string/content_misi" />
+                </TableRow>
+            </TableLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            //KANDIDAT KE DUA
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/faris" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_image_4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@id/profile_image_3"
+                android:layout_marginLeft="154dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:src="@drawable/faris" />
+
+            <Button
+                android:id="@+id/button_pilh_dua"
+                style="@style/ButtonGeneral"
+                android:layout_marginStart="42dp"
+                android:layout_marginLeft="42dp"
+                android:layout_marginTop="130dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/pilih_dua" />
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:layout_marginTop="200dp">
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/nama_ketua_kd1"/>
+                    <TextView
+                        android:id="@+id/nama_ketua_kd3"
+                        style="@style/TextSpec.Value"
+                       />
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/nama_wakil_kd1"/>
+                    <TextView
+                        android:id="@+id/nama_wakil_kd4"
+                        style="@style/TextSpec.Value"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/visi"/>
+                    <TextView
+                        android:id="@+id/visi_2"
+                        style="@style/TextSpec.Value"/>
+                </TableRow>
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp">
+                    <TextView
+                        style="@style/TextSpec.Field"
+                        android:text="@string/misi"/>
+                    <TextView
+                        android:id="@+id/misi_2"
+                        style="@style/TextSpec.Value"
+                        android:text="@string/content_misi_2"
+                        />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
